@@ -432,6 +432,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1845743571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 746983427678940528, guid: 267ff99cb0e9fd249a435994ab958376, type: 3}
+  m_PrefabInstance: {fileID: 3281025816783806066}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1845743579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845743571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c58601ec3c374458dc1646cac002d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HumanoidHandIKDriver
+  directionSmooth: 15
+  positionSmooth: 18
+  rotationSmooth: 20
+--- !u!114 &1845743580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845743571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d5facc648da08478003a470df3d3b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HumanoidBodyDriver
+  bodyYaw: 45
+  bodyRoll: 25
+  bodySmooth: 6
+  headYaw: 55
+  headPitch: 40
+  headSmooth: 10
 --- !u!1001 &3281025816783806066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -484,10 +522,32 @@ PrefabInstance:
       propertyPath: m_Name
       value: SK_SciFiTrooperManV3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6338303005139774896, guid: 267ff99cb0e9fd249a435994ab958376, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6338303005139774896, guid: 267ff99cb0e9fd249a435994ab958376, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 601af5f8a68c4e240956fc1dba8e139e, type: 2}
+    - target: {fileID: 7173446686659722968, guid: 267ff99cb0e9fd249a435994ab958376, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5076086732468833574, guid: 267ff99cb0e9fd249a435994ab958376, type: 3}
+    - {fileID: 991686735381118528, guid: 267ff99cb0e9fd249a435994ab958376, type: 3}
+    - {fileID: 3417340889998730329, guid: 267ff99cb0e9fd249a435994ab958376, type: 3}
+    - {fileID: 7173446686659722968, guid: 267ff99cb0e9fd249a435994ab958376, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 746983427678940528, guid: 267ff99cb0e9fd249a435994ab958376, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1845743579}
+    - targetCorrespondingSourceObject: {fileID: 746983427678940528, guid: 267ff99cb0e9fd249a435994ab958376, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1845743580}
   m_SourcePrefab: {fileID: 100100000, guid: 267ff99cb0e9fd249a435994ab958376, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

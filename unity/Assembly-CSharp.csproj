@@ -49,14 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\retargeting\HumanoidBodyDriver.cs" />
-    <Compile Include="Assets\Scripts\retargeting\HumanoidPoseApplier.cs" />
     <Compile Include="Assets\Scripts\networking\UDPReceiver.cs" />
     <Compile Include="Assets\Scripts\retargeting\SmoothingFilter.cs" />
     <Compile Include="Assets\Scripts\networking\PoseData.cs" />
     <Compile Include="Assets\Scripts\calibration\CalibrationManager.cs" />
-    <Compile Include="Assets\Scripts\retargeting\HumanoidIKDriver.cs" />
-    <Compile Include="Assets\Scripts\retargeting\HumanoidFootIKDriver.cs" />
-    <Compile Include="Assets\Scripts\debug\TestHumanoidBones.cs" />
     <Compile Include="Assets\Scripts\retargeting\HumanoidHandIKDriver.cs" />
   </ItemGroup>
   <ItemGroup>
